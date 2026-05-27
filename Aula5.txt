@@ -1,0 +1,4 @@
+svg=para ilustrações,nao perde qualidade qaundo esticada
+header,footer,nav=div especifica
+apenas letra maiuscula=leitor de texto le como sigla. BAR=Be a erre
+banner pricipal=hero section
