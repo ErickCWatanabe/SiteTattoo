@@ -2,6 +2,20 @@
     margin: 0px;
     padding: 0px;
 }
+:root{
+    --inter:"Inter",sans-serif;
+    --teko:"Teko",sans-serif;
+    --brand:#FFCC00;
+    --brandClaro:#FFE990;
+    --brandEscuro:#CAA100;
+    --gradient:linear-gradient(to right,#FFCC00,#CAA100);
+    --dark:#14141B;
+    --light:#DDDDDD;
+    --preto:#000000;
+    --branco:#FFFFFF;
+
+}
+
 body{
     background-color: #14141B;
 }
