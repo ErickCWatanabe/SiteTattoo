@@ -1,33 +1,59 @@
+
 *{
     margin: 0px;
     padding: 0px;
 }
 :root{
-    --inter:"Inter",sans-serif;
-    --teko:"Teko",sans-serif;
+    --fonteRegular:"Inter",sans-serif;
+    --fonteBold:"Teko",sans-serif;
     --brand:#FFCC00;
     --brandClaro:#FFE990;
     --brandEscuro:#CAA100;
-    --gradient:linear-gradient(to right,#FFCC00,#CAA100);
+    --gradient:linear-gradient(90deg,var(--brand)0%,var(--brandEscuro)100%);
     --dark:#14141B;
-    --light:#DDDDDD;
+    --text:#DDDDDD;
     --preto:#000000;
     --branco:#FFFFFF;
 
 }
-
 body{
-    background-color: #14141B;
+    background-color: var(--dark);
+    font-family: var(--fonteRegular);
+}
+a{
+    display: inline-block;
+     text-decoration: none;
+}
+.container{
+    width: 100%;
+    max-width: 1116px;
+    margin: 0 auto;
 }
 .headerPrincipal{
-    background-color: aqua;
+    background-color:rgba(0, 0, 0, 0.30);
+    backdrop-filter:blur(5px);
     position: fixed;
     width: 100%;
-    border-top: 3px solid #FFCC00;
-    padding:24px 0px
+    border-top: 3px solid var(--brand);
+    padding:24px 0px;
 }
 .headerPrincipal .container{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu{
+    display: flex;
+    column-gap:100px;
+}
+.menu a{
+    font-family: var(--fonteBold);
+    color: var(--branco);
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.menu a:hover{
+    color: var(--brand);
 }
 .hero{
     background-image: url("../imagens/bg_hero.webp");
@@ -35,4 +61,58 @@ body{
     width: 100%;
     background-size: cover;
     background-position: top right;
+
+    display: flex;
+    align-items: center;
+}
+
+.hero .container{
+    margin-top: 100px;
+}
+
+.hero h1{
+    font-family: var(--fonteBold);
+    color: var(--branco);
+    font-size: 112px;
+    text-transform: uppercase;
+    line-height: 90%;
+}
+.hero h2{
+    font-size: 20px;
+    color: var(--brand);
+    margin-bottom: 13px;
+}
+.hero p{
+    font-size: 20px;
+    color: var(--text);
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+
+.button{
+    font-size: 16px;
+    padding: 12px 48px;
+    background-image: var(--gradient);
+    border: 1px solid;
+    border-radius: 5px;
+    color: var(--preto);
+   
+}
+#container2{
+    padding: 128px 0px;
+    display: flex;
+    column-gap: 26px;
+}
+#container2 h2{
+    margin-top: 99px;
+    margin-bottom: 16px;
+    font-size: 48px;
+    font-family:var(--fonteBold) ;
+    color: var(--branco);
+    text-transform: uppercase;
+}
+#container2 p{
+    font-size: 16px;
+    color: var(--text);
+    margin-bottom: 16px;
 }
